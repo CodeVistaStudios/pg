@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container box">
+        <div id="payment-icon">
+            <img id="payment-method-icon" src="" alt="Payment Method Icon" class="payment-method-icon">
+        </div>
+        <h2>Payment Instructions</h2>
+        <div id="payment-instructions">
+            <!-- Bkash Instructions -->
+            <div id="Bkash" class="payment-method hidden">
+                <h3>Bkash</h3>
+                <div class="step-box">1. Open the bKash app.</div>
+                <div class="step-box">2. Select the "Send Money" option.</div>
+                <div class="step-box">3. Click to copy <span onclick="copyNumber('01870986567')">01870986567</span>.</div>
+                <div class="step-box">4. Enter the number in the "To" box.</div>
+                <div class="step-box">5. Enter the amount.</div>
+                <div class="step-box">6. Enter the pin and send the money.</div>
+                <div class="step-box">7. Now fill out the below form with details and images.</div>
+                <div class="step-box">8. Click on the "Paid" button and wait for the mail.</div>
+            </div>
+            <!-- Upay Instructions -->
+            <div id="Upay" class="payment-method hidden">
+                <h3>Upay</h3>
+                <div class="step-box">1. Open the Upay app.</div>
+                <div class="step-box">2. Select the "Send Money" option.</div>
+                <div class="step-box">3. Click to copy <span onclick="copyNumber('01870986567')">01870986567</span>.</div>
+                <div class="step-box">4. Enter the number in the "To" box.</div>
+                <div class="step-box">5. Enter the amount.</div>
+                <div class="step-box">6. Enter the pin and send the money.</div>
+                <div class="step-box">7. Now fill out the below form with details and images.</div>
+                <div class="step-box">8. Click on the "Paid" button and wait for the mail.</div>
+            </div>
+            <!-- Nagad Instructions -->
+            <div id="Nagad" class="payment-method hidden">
+                <h3>Nagad</h3>
+                <div class="step-box">1. Open the Nagad app.</div>
+                <div class="step-box">2. Select the "Send Money" option.</div>
+                <div class="step-box">3. Click to copy <span onclick="copyNumber('01870986567')">01870986567</span>.</div>
+                <div class="step-box">4. Enter the number in the "To" box.</div>
+                <div class="step-box">5. Enter the amount.</div>
+                <div class="step-box">6. Enter the pin and send the money.</div>
+                <div class="step-box">7. Now fill out the below form with details and images.</div>
+                <div class="step-box">8. Click on the "Paid" button and wait for the mail.</div>
+            </div>
+            <!-- Binance Instructions -->
+            <div id="Binance" class="payment-method hidden">
+                <h3>Binance</h3>
+                <div class="step-box">1. Open the Binance app.</div>
+                <div class="step-box">2. Select wallet, then spot.</div>
+                <div class="step-box">3. Select "Withdraw".</div>
+                <div class="step-box">4. Choose the "TetherUS" wallet.</div>
+                <div class="step-box">5. Choose "Send via Email, Phone, or ID".</div>
+                <div class="step-box">6. Send Mode: "Binance ID".</div>
+                <div class="step-box">7. Click to copy <span onclick="copyNumber('784008261')">784008261</span>.</div>
+                <div class="step-box">8. Enter Binance's ID and amount.</div>
+                <div class="step-box">9. Then send, next, confirm.</div>
+                <div class="step-box">10. Now fill out the below form with details and images.</div>
+                <div class="step-box">11. Click on the "Paid" button and wait for the mail.</div>
+            </div>
+            <!-- Bitget Instructions -->
+            <div id="Bitget" class="payment-method hidden">
+                <h3>Bitget</h3>
+                <div class="step-box">1. Open the Bitget app.</div>
+                <div class="step-box">2. Select wallet, then spot.</div>
+                <div class="step-box">3. Select "Withdraw".</div>
+                <div class="step-box">4. Choose the "TetherUS" wallet.</div>
+                <div class="step-box">5. Choose "Send via Email, Phone, or ID".</div>
+                <div class="step-box">6. Send Mode: "Bitget ID".</div>
+                <div class="step-box">7. Click to copy <span onclick="copyNumber('784008261')">784008261</span>.</div>
+                <div class="step-box">8. Enter Bitget's ID and amount.</div>
+                <div class="step-box">9. Then send, next, confirm.</div>
+                <div class="step-box">10. Now fill out the below form with details and images.</div>
+                <div class="step-box">11. Click on the "Paid" button and wait for the mail.</div>
+            </div>
+            <!-- Bybit Instructions -->
+            <div id="Bybit" class="payment-method hidden">
+                <h3>Bybit</h3>
+                <div class="step-box">1. Open the Bybit app.</div>
+                <div class="step-box">2. Select wallet, then spot.</div>
+                <div class="step-box">3. Select "Withdraw".</div>
+                <div class="step-box">4. Choose the "TetherUS" wallet.</div>
+                <div class="step-box">5. Choose "Send via Email, Phone, or ID".</div>
+                <div class="step-box">6. Send Mode: "Bybit ID".</div>
+                <div class="step-box">7. Click to copy <span onclick="copyNumber('784008261')">784008261</span>.</div>
+                <div class="step-box">8. Enter Bybit's ID and amount.</div>
+                <div class="step-box">9. Then send, next, confirm.</div>
+                <div class="step-box">10. Now fill out the below form with details and images.</div>
+                <div class="step-box">11. Click on the "Paid" button and wait for the mail.</div>
+            </div>
+            <!-- Tonkeeper Instructions -->
+            <div id="Tonkeeper" class="payment-method hidden">
+                <h3>Tonkeeper (Toncoin)</h3>
+                <div class="step-box">1. Open the Tonkeeper app.</div>
+                <div class="step-box">2. Click on "Send".</div>
+                <div class="step-box">3. Paste the address below.</div>
+                <div class="step-box">4. Click to copy <span onclick="copyNumber('Adjeko399jekwlpe')">Adjeko399jekwlpe</span>.</div>
+                <div class="step-box">5. Enter the amount and send it.</div>
+                <div class="step-box">6. Now fill out the below form with details and images.</div>
+                <div class="step-box">7. Click on the "Paid" button and wait for the mail.</div>
+            </div>
+        </div>
+        <form id="payment-form" onsubmit="handleSubmit(event)">
+            <label for="sender-id">Sender ID</label>
+            <input type="text" id="sender-id" name="sender-id" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="order-code">Order Code</label>
+            <input type="text" id="order-code" name="order-code" required>
+            <label for="transaction-id">Transaction ID</label>
+            <input type="text" id="transaction-id" name="transaction-id" required>
+            <label for="payment-proof">Payment Proof (Image)</label>
+            <input type="file" id="payment-proof" name="payment-proof" accept="image/*" required>
+            <input type="hidden" id="payment-gateway" name="payment-gateway">
+            <button type="submit" id="paid-button">Paid</button>
+        </form>
+    </div>
+    <div id="progress-popup" class="hidden box">
+        <p>Sending Payment Details...</p>
+    </div>
+    <div id="success-popup" class="hidden box">
+        <p>Payment Successful!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

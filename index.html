@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="profile.jpg" alt="Profile" class="profile-image">
+            <h2>Team Alpha SH</h2>
+            <div class="buttons">
+                <button onclick="handleSupport()">Support</button>
+                <button onclick="handleFAQ()">FAQ</button>
+                <button onclick="handlePay()">Pay</button>
+            </div>
+            <div id="payment-options" class="payment-options">
+                <h3>BDT</h3>
+                <div class="category">
+                    <button onclick="redirectToPayment('Bkash')">
+                        <img src="images/bkash.png" alt="Bkash" class="payment-icon">
+                        Bkash
+                    </button>
+                    <button onclick="redirectToPayment('Upay')">
+                        <img src="images/upay.png" alt="Upay" class="payment-icon">
+                        Upay
+                    </button>
+                    <button onclick="redirectToPayment('Nagad')">
+                        <img src="images/nagad.png" alt="Nagad" class="payment-icon">
+                        Nagad
+                    </button>
+                </div>
+                <h3>Wallet</h3>
+                <div class="category">
+                    <button onclick="redirectToPayment('Binance')">
+                        <img src="images/binance.png" alt="Binance" class="payment-icon">
+                        Binance
+                    </button>
+                    <button onclick="redirectToPayment('Bitget')">
+                        <img src="images/bitget.png" alt="Bitget" class="payment-icon">
+                        Bitget
+                    </button>
+                    <button onclick="redirectToPayment('Bybit')">
+                        <img src="images/bybit.png" alt="Bybit" class="payment-icon">
+                        Bybit
+                    </button>
+                </div>
+                <h3>Crypto</h3>
+                <div class="category">
+                    <button onclick="redirectToPayment('Tonkeeper')">
+                        <img src="images/tonkeeper.png" alt="Tonkeeper" class="payment-icon">
+                        Tonkeeper
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="support-details" class="hidden box">
+            <h3>Contact Details</h3>
+            <p>Name: Demo Name</p>
+            <p>Email: demo@gmail.com</p>
+            <p>Profession: Developer</p>
+            <p>Address: 123 Demo Street, City, Country</p>
+            <button onclick="closeSupport()">Close</button>
+        </div>
+        <div id="faq-section" class="hidden box">
+            <h3>Frequently Asked Questions</h3>
+            <p><strong>Q1:</strong> What is this service?</p>
+            <p>A1: This is a payment gateway service.</p>
+            <p><strong>Q2:</strong> How can I contact support?</p>
+            <p>A2: Click on the support button for contact details.</p>
+            <button onclick="closeFAQ()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
